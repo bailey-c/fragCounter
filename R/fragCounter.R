@@ -82,7 +82,7 @@ multicoco = function(cov, numlevs = 1, base = max(10, 1e5 / max(width(cov))),
     seg = NULL
     sl = GenomeInfoDb::seqlengths(cov)
     if (verbose) {
-      cat('Presegmenting at ', as.integer(WID*base^(numlevs)), ' bp scale \n')
+      cat('Presegmenting at ', as.numeric(WID*base^(numlevs)), ' bp scale \n')
     }
 ##    require(DNAcopy) #' twalradt Wednesday, Jan 16, 2019 04:36:46 PM
     set.seed(42) #' twalradt Friday, Apr 20, 2018 01:07:28 PM
